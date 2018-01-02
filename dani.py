@@ -23,7 +23,7 @@ else:
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
-cl.login(token="")
+cl.login(token="EokJSFpOOstMPU8OIwsf.RVc+t3Sz0ozBnOD0HC+IZW.hQa2NZHmJ0YzWZQQsz+FDRRzmx0F0ZvjtWrZb9IfE9Q=")
 cl.loginResult()
 
 print "==================[Login Success]==================="
@@ -682,7 +682,7 @@ def bot(op):
                 cl.sendText(msg.to, "☞「 Speed SelfBot 」\n☞ Type: Speed\n☞ Speed : %sseconds" % (elapsed_time))
             elif msg.text.lower() == 'crash':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': ""}
+                msg.contentMetadata = {'mid': "ua045df9ee16399c865d9eb130d971a37"}
                 cl.sendMessage(msg)
             elif msg.text.lower() == 'me':
                 msg.contentType = 13
