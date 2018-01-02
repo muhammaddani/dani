@@ -22,33 +22,37 @@ else:
     import urllib.parse
 
 cl = LINETCR.LINE()
-cl.login(token="(Isi TOKEN Kamu)")
+#cl.login(qr=True)
+cl.login(token="")
 cl.loginResult()
 
 print "==================[Login Success]==================="
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpmsg ="""╔════════════════════════════════
+helpmsg ="""
+╔════════════════════════════════
 ╠➩  My SelfBot
 ╠ 
 ╠➩  Help1-5
 ╠ 
-╠➩ SelfBot Digunakan Hanya Untuk 
-╠     Bermain-main
+╠➩  Bot Digunakan Hanya Untuk 
+╠        Bermain-main
 ╚════════════════════════════════
 """
 
-helppro ="""╔═════════════════
+helppro ="""
+╔═════════════════
 ╠   Protect Command
 ╠➩〘Protect on/off〙
-���➩〘Qr on/off〙
+╠➩〘Qr on/off〙
 ╠➩〘Invit on/off〙
 ╠➩〘Cancel on/off〙
 ╚═════════════════
 """
 
-helpself ="""╔═════════════════
+helpself ="""
+╔═════════════════
 ╠   Selft Command
 ╠➩〘Me〙
 ╠➩〘Myname: 〙
@@ -77,7 +81,8 @@ helpself ="""╔═════════════════
 ╚═════════════════
 """
 
-helpset ="""╔═════════════════
+helpset ="""
+╔═════════════════
 ╠   Setting Command
 ╠➩〘Contact on/off〙
 ╠➩〘Autojoin on/off〙
@@ -92,7 +97,8 @@ helpset ="""╔═════════════════
 ╚═════════════════
 """
 
-helpgrup ="""╔═════════════════
+helpgrup ="""
+╔═════════════════
 ╠   Group Command
 ╠➩〘Link on/off〙
 ╠➩〘Url〙
@@ -115,7 +121,8 @@ helpgrup ="""╔═════════════════
 ╚═════════════════
 """
 
-helpmed ="""╔═════════════════
+helpmed ="""
+╔═════════════════
 ╠   Social Media Command
 ╠➩〘kalender〙
 ╠➩〘tr-id 〙
@@ -157,13 +164,13 @@ wait = {
     'autoAdd':True,
     'message':"Thanks for add me ^_^",
     "lang":"JP",
-    "comment":"Haii Kaka",
+    "comment":"Hai Kak",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cNames":"ই͜✿ই͜Muhammad ই͜Fahmi ই͜Ridhani✿",
+    "cNames":"",
     "cNames":"",
     "blacklist":{},
     "wblacklist":False,
@@ -675,7 +682,7 @@ def bot(op):
                 cl.sendText(msg.to, "☞「 Speed SelfBot 」\n☞ Type: Speed\n☞ Speed : %sseconds" % (elapsed_time))
             elif msg.text.lower() == 'crash':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "ud7a8fbcc2af037c2c5bf181b89fda5f7',"}
+                msg.contentMetadata = {'mid': ""}
                 cl.sendMessage(msg)
             elif msg.text.lower() == 'me':
                 msg.contentType = 13
@@ -924,7 +931,7 @@ def bot(op):
                 cl.sendMessage(msg)
             elif cms(msg.text,["creator","Creator"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "ud7a8fbcc2af037c2c5bf181b89fda5f7"}
+                msg.contentMetadata = {'mid': ""}
                 cl.sendMessage(msg)
             elif msg.text.lower() == 'autoadd on':
                 if wait["autoAdd"] == True:
